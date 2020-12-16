@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% block head %}
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        {% block styles %}
+            <!-- Bootstrap CSS -->
+            {{ bootstrap.load_css() }}
+            <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+        {% endblock %}
+
+        <title>
+            {% if title %}{{ title }}{% else %}Web graph editor{% endif %}
+        </title>
+        {% endblock %}
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 hat">Шапка</div>
+            </div>
+            <div class="row justify-content-center" >
+                <div class="col-10 app_content">
+                    {% block app_content %}{% endblock %}
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                {% extends "basement.html" %}
+            </div>
+            </div>
+        {% block scripts %}
+            <!-- Optional JavaScript -->
+            {{ bootstrap.load_js() }}
+        {% endblock %}
+    </body>
+</html>

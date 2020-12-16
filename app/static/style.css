@@ -1,0 +1,24 @@
+/* MAIN CLASSES */
+body{
+    background-color: #5a575a;
+}
+
+/* HEADER CLASSES */
+.hat{
+    background-color: #f5acf5;
+}
+
+/* CONTENT CLASSES */
+.app_content{
+    background-color: #8a0d47;
+}
+
+/* BASEMENT CLASES */
+.bottom{
+    /* background-color: #40458a; */
+    border-top: 1px solid #ffffff;
+}
+.bottom_part{
+    margin-top: 5px;
+    border-right: 1px solid #ffffff;
+}
