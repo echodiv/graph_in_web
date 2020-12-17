@@ -1,0 +1,7 @@
+# envoriement
+.venv
+# python
+*.pyc
+__pycache__
+# application
+logs
